@@ -1,11 +1,13 @@
 import React from 'react'
-import {Bar } from 'react-chartjs-2'
+import { Pie, defaults } from 'react-chartjs-2'
 
+defaults.global.tooltips.enabled = false
+defaults.global.legend.position = 'bottom'
 
-const BarChart = () => {
+const PieChart = () => {
   return (
     <div>
-      <Bar
+      <Pie
         data={{
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
           datasets: [
@@ -30,6 +32,7 @@ const BarChart = () => {
               ],
               borderWidth: 1,
             },
+           
           ],
         }}
         height={400}
@@ -56,4 +59,4 @@ const BarChart = () => {
   )
 }
 
-export default BarChart
+export default PieChart

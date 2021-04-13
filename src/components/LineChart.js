@@ -1,11 +1,11 @@
 import React from 'react'
-import {Bar } from 'react-chartjs-2'
+import {Line } from 'react-chartjs-2'
 
 
-const BarChart = () => {
+const LineChart = () => {
   return (
     <div>
-      <Bar
+      <Line
         data={{
           labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
           datasets: [
@@ -56,4 +56,4 @@ const BarChart = () => {
   )
 }
 
-export default BarChart
+export default LineChart
